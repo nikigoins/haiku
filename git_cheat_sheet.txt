@@ -1,0 +1,9 @@
+1. How do you commit new changes?
+
+2. How do you reset to your last commit (You made a mistake. You need to delete your changes.)?
+
+3. How do you list all branches in your repository?
+
+4. How do you view commit history (View a list of commits and their descriptions)?
+
+5. How do I create a new branch?
