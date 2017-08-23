@@ -1,0 +1,8 @@
+bundle
+  *Update your files
+
+rails s -b $IP -p $PORT
+  Turns on the site
+
+control C
+  Turns off the site
