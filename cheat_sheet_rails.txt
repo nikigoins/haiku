@@ -1,8 +1,12 @@
 bundle
   *Update your files
 
-rails s -b $IP -p $PORT
-  Turns on the site
+rake db:migrate
+  *Update your database
 
-control C
+rails s -b $IP -p $PORT
+  Turns on the site.  Will only work on could9.
+  `rails server` for local Mac machines
+
+control c
   Turns off the site

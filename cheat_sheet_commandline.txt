@@ -1,0 +1,12 @@
+cd
+  Move into directory below your current position
+  example: cd haiku/
+
+cd ../
+  Move into directory above your current position
+
+pwd
+  Display your current position
+
+ls
+  list everything the terminal can see in your current position
