@@ -1,7 +1,7 @@
 git add . 
     "Stages all files (new, modified, and deleted), and prepares for a git commit.
 
-git commit -m"|change file|23" 
+git commit -m"FILE DESCRIPTION" 
     "Stores current content an index in a new commit along with a log message from the user to describe the change
 
 git push 
