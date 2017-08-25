@@ -1,1 +1,10 @@
-test
+git checkout <branch>
+            this command switch branches to the one you specify in <branch> 
+
+git checkout -b <branch>
+            <branch> denotes the creation of a new branch. By issuing this command, you are creating a new branch with the name you choose. 
+            This also switches your working directory to the new branch.
+
+git merge <branch>
+            This command merges the changes in your current branch INTO the branch you define in <branch>.
+
