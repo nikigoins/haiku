@@ -1,22 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 git checkout <branch>
             this command switch branches to the one you specify in <branch> 
 
@@ -26,3 +7,22 @@ git checkout -b <branch>
 
 git merge <branch>
             This command merges the changes in your current branch INTO the branch you define in <branch>.
+
+git status
+    Dispays files that have changed in your repository as it relates to the latest commit. Shows what files were modified 
+    green is ready
+
+git diff
+    Displays differences in changes from master to your version
+    
+git remote add origin (url)
+    Copies everything from the url repository into your workspace
+    
+git add . 
+    "Prepares all files in local branches to be comitted to repository.
+
+git commit -m"FILE DESCRIPTION" 
+    "prepares file to be pushed and adds a description to the file."
+
+git push 
+    "Uploads files from local branch to remote repository."
