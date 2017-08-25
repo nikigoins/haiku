@@ -5,4 +5,4 @@ git commit -m"FILE DESCRIPTION"
     "prepares file to be pushed and adds a description to the file."
 
 git push 
-    "Uploads files from local machine to our own local repository"
+    "Uploads files from local machine to remote repository."
