@@ -1,8 +1,8 @@
 git add . 
-    "Stages all files (new, modified, and deleted), and prepares for a git commit.
+    "Prepares all files in local branches to be comitted to repository.
 
 git commit -m"FILE DESCRIPTION" 
-    "Stores current content an index in a new commit along with a log message from the user to describe the change
+    "prepares file to be pushed and adds a description to the file."
 
 git push 
-    "Updates remote refs along with associated objects"
+    "Uploads files from local machine to our own local repository"
