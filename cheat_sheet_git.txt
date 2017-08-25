@@ -1,1 +1,8 @@
-test
+git branch -d
+    Deletes a branch if it has been fully merged (in Github)
+    
+git branch -D
+    Deletes a branch locally on your computer (not in Github)
+    
+git branch
+    Displays a listing of current branches
