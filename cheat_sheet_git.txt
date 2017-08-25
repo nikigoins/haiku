@@ -1,1 +1,10 @@
 test
+1 git clone url
+        clones a repository into a new directory, if repository is a url. (url is the address of the webpage or reference to web resource that specifies its exact location)
+            wikipedia.org is an example of a url
+git stash
+        the dirty state of your working directory — that is, your modified tracked files and staged changes — and saves it on a stack of unfinished changes that you can reapply at any time.
+            example: https://www.atlassian.com/git/tutorials/git-stash
+git init
+        creates a git subdirectory with objects , refs/heads , refs/tags , and template files
+            example: https://git-scm.com/docs/git-init
