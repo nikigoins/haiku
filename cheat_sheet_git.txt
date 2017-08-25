@@ -1,1 +1,8 @@
-test
+git add . 
+    "Stages all files (new, modified, and deleted), and prepares for a git commit.
+
+git commit -m"|change file|23" 
+    "Stores current content an index in a new commit along with a log message from the user to describe the change
+
+git push 
+    "Updates remote refs along with associated objects"
