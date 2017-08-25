@@ -1,1 +1,10 @@
-test
+git status
+    Dispays files that have changed in your repository as it relates to the latest commit. Shows what files were modified 
+    green is ready
+
+git diff
+    Displays differences in changes from master to your version
+    
+git remote add origin (url)
+    Copies everything from the url repository into your workspace
+    
