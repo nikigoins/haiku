@@ -1,3 +1,41 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 git branch -d
     Deletes a branch if it has been fully merged (in Github)
     
