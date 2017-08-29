@@ -7,6 +7,16 @@ git checkout -b <branch>
 
 git merge <branch>
             This command merges the changes in your current branch INTO the branch you define in <branch>.
+ 
+30 git clone url
+31   clones a repository into a new directory, if repository is a url. (url is the address of the webpage or reference to web resource that specifies its exact location)      
+32  ex. wikipedia.org is an example of a url
+33 git stash
+34   the dirty state of your working directory — that is, your modified tracked files and staged changes — and saves it on a stack of unfinished changes that you can reapply at any time.
+35  example: https://www.atlassian.com/git/tutorials/git-stash
+36 git init
+37   creates a git subdirectory with objects , refs/heads , refs/tags , and template files
+38  example: https://git-scm.com/docs/git-init
 
 git status
     Dispays files that have changed in your repository as it relates to the latest commit. Shows what files were modified 
