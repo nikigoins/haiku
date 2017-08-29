@@ -26,3 +26,9 @@ git commit -m"FILE DESCRIPTION"
 
 git push 
     "Uploads files from local branch to remote repository."
+
+git remote add username_of_repo url_of_repo
+    "adds a connection to the original repository"
+
+git remote -v
+    "test connection to the original repository (see command above.)"
