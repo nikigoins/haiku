@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+  Must be added to top of html files
+
+<html></html>
+  Contains all html tags, including the header and body
+
+<head></head>
+  HTML header.  Includes items like page title and formatting
+
+<title></title>
+  page title.  Add to header.
+
+<body></body>
+  Added under header.  There can be only one <body> element.  This is where the things you want people to see would go.
+
+<div></div>
+  Container that allows you to group tags together
+
+<h1></h1> or <h2></h2> or <h3></h3> or <h4></h4> or <h5></h5> or <h6></h6>
+  Headings inside the <body> tag.
+
+<p></p>
+  Paragraph of text inside body tag
+
+<span></span>
+  Mostly used in paragraphs and header.  Allows you to style sections differently.
+  Example:
+    <p>
+      Any kind of <span>content</span> here.
+    </p>
+
+<ol>
+  <li></li>
+</ol>
+  Ordered list. <li> will appear as numbers, starting with 1.
+
+<ul>
+  <li></li>
+</ul>
+  Unordered list. <li> will appear as bullet points.
+
+<a href="http://www.google.com" target="_blank">google.com</a>
+  Link that opens in a new window
+
+<a href="http://www.google.com">google.com</a>
+  Link that opens in current window
+
+<a href="my_html_file.html">go to my_html_file</a>
+  Link to a file in the same folder.
+
+<a href="mailto:user@example.com">Email User</a>
+  Email
+
+<a href="#page-section">Link to page section</a>
+  Link to another spot on the same page.
+
+<img src="some_image.png" alt="TTS">
+  Basic image
+
+<img src="some_image.png" width="200px" height="200px">
+  Image with a set width and set height
+
+<a href="https://developer.mozilla.org/en-US/" target="_blank">
+  <img src="https://mdn.mozillademos.org/files/6851/mdn_logo.png"/>
+</a>
+  Link with an image inside
+
+<table>
+  <tr>
+    <th>First name</th>
+    <th>Last name</th>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+  </tr>
+  <tr>
+    <td>Jane</td>
+    <td>Doe</td>
+  </tr>
+</table>
+  Basic Table.  tr - new table row. th - table header box.  td - table column box
