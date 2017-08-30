@@ -1,3 +1,15 @@
+git clone url
+  clones a repository into a new directory, if repository is a url. (url is the address of the webpage or reference to web resource that specifies its exact location)
+  ex. wikipedia.org is an example of a url
+
+git stash
+  the dirty state of your working directory — that is, your modified tracked files and staged changes — and saves it on a stack of unfinished changes that you can reapply at any time.
+  example: https://www.atlassian.com/git/tutorials/git-stash
+
+git init
+  creates a git subdirectory with objects , refs/heads , refs/tags , and template files
+  example: https://git-scm.com/docs/git-init
+
 git branch -d
     Deletes a branch if it has been fully merged (in Github)
     
@@ -16,34 +28,24 @@ git checkout -b <branch>
 
 git merge <branch>
             This command merges the changes in your current branch INTO the branch you define in <branch>.
- 
-30 git clone url
-31   clones a repository into a new directory, if repository is a url. (url is the address of the webpage or reference to web resource that specifies its exact location)      
-32  ex. wikipedia.org is an example of a url
-33 git stash
-34   the dirty state of your working directory — that is, your modified tracked files and staged changes — and saves it on a stack of unfinished changes that you can reapply at any time.
-35  example: https://www.atlassian.com/git/tutorials/git-stash
-36 git init
-37   creates a git subdirectory with objects , refs/heads , refs/tags , and template files
-38  example: https://git-scm.com/docs/git-init
 
 git status
-    Dispays files that have changed in your repository as it relates to the latest commit. Shows what files were modified 
+    Dispays files that have changed in your repository as it relates to the latest commit. Shows what files were modified
     green is ready
 
 git diff
     Displays differences in changes from master to your version
-    
+
 git remote add origin (url)
     Copies everything from the url repository into your workspace
-    
-git add . 
+
+git add .
     "Prepares all files in local branches to be comitted to repository.
 
-git commit -m"FILE DESCRIPTION" 
+git commit -m"FILE DESCRIPTION"
     "prepares file to be pushed and adds a description to the file."
 
-git push 
+git push
     "Uploads files from local branch to remote repository."
 
 git remote add username_of_repo url_of_repo
