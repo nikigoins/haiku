@@ -1,0 +1,76 @@
+.top {
+    background-color: #F25266;
+    font-family: 'Baloo Tammudu', cursive;
+    color:#376BBA;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 100%;
+    margin-bottom: 20.3125em;
+    margin-top: -0.15625em;
+    border: #666561 solid 0.9375em;
+    border-bottom:#666561 solid 1.15625em;
+}
+
+.middle {
+    margin-top: -20.5em;
+    background-color:#ECECEC;
+    border-right: #666561 solid 1.25em;
+    border-left: #666561 solid 1.25em;
+    padding: 1em;
+}
+
+.bottom {
+    background-color:#458BDD;
+    padding-bottom: 1em;
+    margin:auto;
+    border: #666561 solid 1.25em;
+}
+
+ul {
+    column-count: 11;
+    column-gap: 1.25em;
+    list-style: none;
+    font-family: 'Baloo Tammudu', cursive;
+    margin-left: 2em;
+    padding-top: 1em;
+}
+
+input {
+    border: 2px #666561;
+    border-radius: 1.5625em;
+    background-color: #ECEC;
+}
+
+li {
+    border:  0.125em solid #666561;
+    border-radius: 1.5625em;
+    background-color: #3DC6A8;
+    text-align: center;
+}
+
+form {
+    column-count: 1;
+    column-gap: 3.125em;
+    color: #458BDD;
+    font-weight: bold;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:hover { 
+    color: yellow;
+    font-size: 1.125em;
+}
+
+.button {
+    background-color: #3DC6A8;
+    border: 0.125em solid #666561;
+    border-radius: 1.5625em;
+    color: #376BBA;
+    padding: 0.0625em 1.875em;
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Baloo Tammudu', cursive;
+}
