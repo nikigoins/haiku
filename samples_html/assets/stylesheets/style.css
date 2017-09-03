@@ -21,6 +21,7 @@ h1 {
 
 form > label{
     color: #2E90BF;
+    column-count: 1
 }
 
 
@@ -28,6 +29,7 @@ form > input {
     background-color: #2E90BF;
     border-color: #666561;
     width: 14.2%;
+    column-count: 1
 }
 
 #button_one {
@@ -40,7 +42,6 @@ form > input {
     font-size: 1em;
     cursor: pointer;
     margin-top: 1em;
-    transform: translateY(-0.em) translateX();
 }
 
 #button_one:active {
@@ -57,6 +58,7 @@ ul {
     list-style: none;
     column-count: 10;
 }
+
 
 a:link {
     color: #6DBF2E;
