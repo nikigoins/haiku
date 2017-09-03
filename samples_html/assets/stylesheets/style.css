@@ -51,13 +51,11 @@ form > input {
 .bottom {
     background-color:#F25266;
     border: #666561 solid 1em;
-    font-size: 100%;
-    column-count: 10;
-    padding: 1em;
 }
 
 ul {
     list-style: none;
+    column-count: 10;
 }
 
 a:link {
@@ -70,5 +68,4 @@ a:visited {
 
 a:hover { 
     color: yellow;
-    font-size: 100%;
 }
