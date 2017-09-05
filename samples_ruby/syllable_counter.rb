@@ -1,4 +1,4 @@
-# ------------ Count number of lines in a paragraph --------------------
+# ------------ Count number of syllables in a word --------------------
 word = "One sentence"
 
 # Stuff you need to edit goes after this line. Do not edit this line! -------------
