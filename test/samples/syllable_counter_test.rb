@@ -6,11 +6,23 @@ class SyllableCounterTest < FindVariable
   end
 
   test 'one syllable' do
-    check_method('one line', 1)
+    check_method('one', 1)
   end
 
-  private def check_method(sentence, syllables)
-    @check_method = "sentence = '#{sentence}' \n" + @check_method
+  test 'hello syllable' do
+    check_method('hello', 2)
+  end
+
+  test 'beautiful syllable' do
+    check_method('beautiful', 3)
+  end
+
+  test 'received syllable' do
+    check_method('received', 3)
+  end
+
+  private def check_method(word, syllables)
+    @check_method = "word = '#{word}' \n" + @check_method
     super(syllables)
   end
 end
