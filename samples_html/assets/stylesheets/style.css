@@ -27,20 +27,21 @@ h1 {
     width: 40%;
 }
 
-form > label{
+label{
     color: #2E90BF;
-    column-count: 1
+    column-count: 1;
+    cursor: pointer;
 }
 
 
-form > input {
+input {
     background-color: #2E90BF;
     border-color: #666561;
     width: 14.2%;
-    column-count: 1
+    column-count: 1;
 }
 
-#button_one {
+input:nth-child(12){
     font-family: 'Anton', sans-serif;
     color:#FFF;
     background: #2E90BF;
@@ -49,12 +50,12 @@ form > input {
     width: 100%;
     font-size: 1em;
     cursor: pointer;
-    margin-top: 1em;
+    margin-top: 1em;   
 }
 
-#button_one:active {
-  background-color: #2E90BF;
-  transform: translateY(4px);
+input:nth-child(12):active{
+    background-color: #2E90BF;
+    transform: translateY(4px);
 }
 
 .bottom {
