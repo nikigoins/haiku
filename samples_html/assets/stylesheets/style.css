@@ -21,26 +21,26 @@ h1 {
     border-right: #666561 1em solid;
 }
 
-.pic {
+.stylepic {
     display: block;
     margin: auto;
     width: 40%;
 }
 
-form > label{
+label{
     color: #2E90BF;
     column-count: 1
 }
 
 
-form > input {
+input {
     background-color: #2E90BF;
     border-color: #666561;
     width: 14.2%;
     column-count: 1
 }
 
-#button_one {
+input:nth-child(12){
     font-family: 'Anton', sans-serif;
     color:#FFF;
     background: #2E90BF;
@@ -52,9 +52,9 @@ form > input {
     margin-top: 1em;
 }
 
-#button_one:active {
-  background-color: #2E90BF;
-  transform: translateY(4px);
+input:nth-child(12):active{
+    background-color: #2E90BF;
+    transform: translateY(4px);
 }
 
 .bottom {
