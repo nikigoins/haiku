@@ -18,6 +18,8 @@ class AddNumbersTest < FindVariable
   end
 
   private def check_method(first, second, total)
+    @check_method = "first = '#{first}' \n
+                     second = '#{second}' \n" + @check_method
     super(total)
   end
 end

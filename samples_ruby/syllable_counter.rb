@@ -9,5 +9,5 @@ sentence = "One sentence"
 # End stuff you need to edit. Don't change anything after this line --------
 
 
-puts "syllable_counter test. #{number_of_syllables} syllable(s): in sentence: \n #{paragraph}"
+puts "syllable_counter test. #{number_of_syllables} syllable(s): in sentence: \n #{sentence}"
  number_of_syllables

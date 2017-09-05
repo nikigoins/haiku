@@ -13,7 +13,8 @@ class FindVariable < ActiveSupport::TestCase
     end
   end
 
-  private def run_compare
-    
+  private def check_method(compare_value)
+    a = eval @check_method
+    assert_equal compare_value, a
   end
 end

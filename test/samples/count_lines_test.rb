@@ -6,20 +6,20 @@ class CountLinesTest < FindVariable
   end
 
   test 'one line' do
-    run_compare('one line', 1)
+    check_method('one line', 1)
   end
 
   test '6 lines' do
     paragraph = "This \n has \n 6 \n lines \n in \n it"
-    run_compare(paragraph, 6)
+    check_method(paragraph, 6)
   end
 
   test 'empty' do
-    run_compare(nil, 0)
+    check_method(nil, 0)
   end
 
-  private def run_compare(paragraph, lines)
-    a = eval @check_method
-    assert_equal a, lines
+  private def check_method(paragraph, lines)
+    @check_method = "paragraph = '#{paragraph}' \n" + @check_method
+    super(lines)
   end
 end

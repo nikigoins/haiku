@@ -10,6 +10,7 @@ class SyllableCounterTest < FindVariable
   end
 
   private def check_method(sentence, syllables)
+    @check_method = "sentence = '#{sentence}' \n" + @check_method
     super(syllables)
   end
 end
