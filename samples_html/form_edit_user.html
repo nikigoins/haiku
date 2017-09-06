@@ -1,17 +1,45 @@
-<!--
-requirements
-  * html format
-  * header
-    * title
-  * body
-    * header
-    * image
-    * form (This form does not need to work)
-      * input field for email
-      * input field for password
-      * input field to confirm password
-      * any other form fields you want to add
-      * submit button
-    * anything else you want to add to the page
-    * extra challenge: html unordered list.  Each bullet point is a link to a different page in this folder.
--->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Edit User</title>
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+        <!-- Link to CSS Sheet -->
+        <link type="text/css" rel="stylesheet" href="assets/stylesheets/style.css" />
+    </head>
+    <body background>
+    <div class="top">
+        <h1 style>User Information</h1>
+    </div>
+    <div class="middle">
+        <img src="https://goo.gl/GVbDwQ" alt="Haiku Example Pic" class="pic"/>
+        <form action="" method="get">
+            <label for="email">E-Mail:</label>
+            <input id="email" name="email">
+            <label for="password">Password:</label>
+            <input id="password" name="password" type="password">
+            <label for="confirm">Confirm Password: </label>
+            <input id="confirm" name="confirm" type="password">
+            <label for="firstname">First Name: </label>
+            <input id="firstname" name="firstname">
+            <label for="lastname">Last Name: </label>
+            <input id="lastname" name="lastname"><br>
+            <input type="submit" value="Submit"/>
+        </form>
+    </div>
+    <div class="bottom">
+        <ul>
+            <li><a href="form_create_haiku.html"><span>Create Haiku</span></a></li>
+            <li><a href="form_edit_haiku.html">Edit Haiku</a></li>
+            <li><a href="form_edit_user.html">Edit User</a></li>
+            <li><a href="form_signup_user.html">Signup User</a></li>
+            <li><a href="haiku_list.html">List</a></li>
+            <li><a href="haiku_one.html">One</a></li>
+            <li><a href="haiku_rules.html">Rules</a></li>
+            <li><a href="index.html">Index</a></li>
+            <li><a href="user_list.html">User List</a></li>
+            <li><a href="user_one.html">User One</a></li>
+        </ul>
+    </div>
+    </body>
+</html>
