@@ -21,6 +21,14 @@ class SyllableCounterTest < FindVariable
     check_method('received', 3)
   end
 
+  test 'spy syllable' do
+    check_method('spy', 1)
+  end
+
+  test 'syllable syllable' do
+    check_method('syllable', 3)
+  end
+
   private def check_method(word, syllables)
     @check_method = "word = '#{word}' \n" + @check_method
     super(syllables)
