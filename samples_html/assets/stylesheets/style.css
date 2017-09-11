@@ -61,3 +61,39 @@ a:hover {
 .incolor{
     color:red;
 }
+.stylepic {
+    display: block;
+    margin: auto;
+    width: 40%;
+}
+
+label{
+    color: #2E90BF;
+    column-count: 1;
+    cursor: pointer;
+}
+
+
+input {
+    background-color: #2E90BF;
+    border-color: #666561;
+    width: 14.2%;
+    column-count: 1;
+}
+
+input:nth-child(12){
+    font-family: 'Anton', sans-serif;
+    color:#FFF;
+    background: #2E90BF;
+    border-color: #000;
+    height: 2em;
+    width: 100%;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 1em;   
+}
+
+input:nth-child(12):active{
+    background-color: #2E90BF;
+    transform: translateY(4px);
+}
