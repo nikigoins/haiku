@@ -1,6 +1,7 @@
 body {
     font-family: 'Anton', sans-serif;
     margin: auto;
+    color: #3E76C5;
 }
 .top {
     background-color: #F25266;
@@ -17,10 +18,49 @@ h1 {
 
 .middle {
     background-color:#ECECEC;
-    border-left: #666561 1em  solid;
-    border-right: #666561 1em solid;
 }
 
+
+.bottom {
+    background-color:#F25266;
+    border: #666561 solid 1em;
+}
+
+ul {
+    list-style: none;
+    column-count: 10;
+}
+
+
+a:link {
+    color: #6DBF2E;
+}
+
+a:visited {
+    color: #6DBF2E;
+}
+
+a:hover { 
+    color: yellow;
+}
+
+.movedown {
+    margin-top: -1.97em;
+    border-color: #666561;
+}
+
+.midbackground {
+    background-color:#666561;
+}
+
+.subone{
+    width: 100%;
+    background-color: #3E76C5;
+}
+
+.incolor{
+    color:red;
+}
 .stylepic {
     display: block;
     margin: auto;
@@ -56,27 +96,4 @@ input:nth-child(12){
 input:nth-child(12):active{
     background-color: #2E90BF;
     transform: translateY(4px);
-}
-
-.bottom {
-    background-color:#F25266;
-    border: #666561 solid 1em;
-}
-
-ul {
-    list-style: none;
-    column-count: 10;
-}
-
-
-a:link {
-    color: #6DBF2E;
-}
-
-a:visited {
-    color: #6DBF2E;
-}
-
-a:hover { 
-    color: yellow;
 }
