@@ -30,7 +30,8 @@ class SyllableCounterTest < FindVariable
   end
 
   private def check_method(word, syllables)
-    @check_method = "word = '#{word}' \n" + @check_method
+    puts "word '#{word}' has #{syllables} syllable(s)"
+    @check_method += "syllable_counter('#{word}')"
     super(syllables)
   end
 end
