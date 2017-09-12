@@ -6,6 +6,7 @@ class CountLinesTest < FindVariable
   end
 
   test 'one line' do
+
     check_method('one line', 1)
   end
 
@@ -19,7 +20,7 @@ class CountLinesTest < FindVariable
   end
 
   private def check_method(paragraph, lines)
-    @check_method = "paragraph = '#{paragraph}' \n" + @check_method
+    @check_method += "count_lines('#{paragraph}')"
     super(lines)
   end
 end

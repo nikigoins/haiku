@@ -1,30 +1,9 @@
-# ------------ Add two numbers ----------------------------------------------
-first = 1
-second = 2
-
-# Stuff you need to edit goes after this line. Do not edit this line! -------------
-
-
+def add_numbers(first, second)
+  # Your code goes here!
+  # Directions: Add first and second together
+  # Hint, do not use puts!
+end
 
 
-
-
-
-# FIX ME! This variable (first_plus_second) needs to add two variables: (first and second)
-first_plus_second = 2
-
-
-
-
-
-
-
-
-
-
-
-
-
-# End stuff you need to edit. Don't change anything after this line --------
-puts "add_numbers test: #{first} + #{second} = #{first_plus_second}"
-first_plus_second
+# Use this for testing
+puts add_numbers(1, 2)
