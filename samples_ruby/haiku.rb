@@ -7,16 +7,50 @@ class SampleHaiku
   end
 
   def valid
-    # YOUR CODE GOES HERE!
-    #  This should return a boolean (true or false)
-    #  Example: a = Haiku.new("This is my paragraph")
-    #           a.valid will return false since it does not meet the rules of a Haiku
-    #  Hint! Use the count_lines.rb file and the syllable_counter.rb file.
-    #    There are only three lines in a a Haiku.  Your count_lines method can help you
-    #    There are 17 syllables in a Haiku.  Your syllable_counter method can help you
-    #    Extra challenge
-    #      The first line in the haiku is 5 syllables.
-    #      The second line is 7 syllables
-    #      The third line is 5 syllables like the first.
+    is_valid = true
+    if @paragraph.lines.count != 3
+      is_valid = false
+    end
+    
+    lines = @paragraph.split("\n")
+    line1 = lines[0].split(' ')
+    line2 = lines[1].split(' ')
+    line3 = lines[2].split(' ')
+    
+    puts line1.to_s
+    syllable_counter("hello")
   end
+  
+  def syllable_counter(word)
+    new_word = []
+    word.split("").each do |letter|
+      if letter.to_s.downcase == "a"
+        new_word << letter
+      elsif letter.to_s.downcase == "e"
+        new_word << letter
+      elsif letter.to_s.downcase == "i"
+        new_word << letter
+      elsif letter.to_s.downcase == "o"
+        new_word << letter
+      elsif letter.to_s.downcase == "u"
+        new_word << letter
+      elsif letter.to_s.downcase == "y"
+        new_word << letter
+      else
+        new_word << " "
+      end
+  end
+
+  puts new_word.to_s
+  puts new_word.join('').split(' ').size
+end
+
+a = SampleHaiku.new("this is a new
+paragraph with three lines")
+
+a.valid
+
+
+
+
 end
