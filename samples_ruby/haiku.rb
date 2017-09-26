@@ -1,56 +1,69 @@
+require 'ruby_rhymes'
+
+
+
 class SampleHaiku
-
-  attr_accessor :paragraph
-
   def initialize(paragraph)
     @paragraph = paragraph
   end
-
-  def valid
-    is_valid = true
-    if @paragraph.lines.count != 3
-      is_valid = false
-    end
-    
-    lines = @paragraph.split("\n")
-    line1 = lines[0].split(' ')
-    line2 = lines[1].split(' ')
-    line3 = lines[2].split(' ')
-    
-    puts line1.to_s
-    syllable_counter("hello")
+  def paragraph
+    @paragraph
   end
   
-  def syllable_counter(word)
-    new_word = []
-    word.split("").each do |letter|
-      if letter.to_s.downcase == "a"
-        new_word << letter
-      elsif letter.to_s.downcase == "e"
-        new_word << letter
-      elsif letter.to_s.downcase == "i"
-        new_word << letter
-      elsif letter.to_s.downcase == "o"
-        new_word << letter
-      elsif letter.to_s.downcase == "u"
-        new_word << letter
-      elsif letter.to_s.downcase == "y"
-        new_word << letter
-      else
-        new_word << " "
+  
+  def valid
+      is valid = true
+      if @paragraph.lines.count != 3
+        is_valid = false
       end
+  end    
+      
+      if is_valid == true
+        line1 = @paragraph.split("\n")[0]
+        line2 = @paragraph.split("\n")[1]
+        line3 = @paragraph.split("\n")[2]
+      end  
+      
+      if line1.to_phrase.syllables != 5
+        is_valid = false
+        
+      if line2.to_phrase.syllables != 7
+        is_valid = false  
+        
+      if line3.to_phrase.syllables != 5
+        is_valid = false
+      end  
   end
-
-  puts new_word.to_s
-  puts new_word.join('').split(' ').size
+  
+  
+  
+  def syllable_counter
+    scount = []
+    @paragraph.split("").each do |letter|
+      if letter.to_s.downcase.include?("a")
+        scount << letter
+      elsif letter.to_s.downcase.include?("e")
+        scount << letter
+      elsif letter.to_s.downcase.include?("i")
+        scount << letter
+      elsif letter.to_s.downcase.include?("o")
+        scount << letter
+      elsif letter.to_s.downcase.include?("u")
+        scount << letter
+      elsif letter.to_s.downcase.include?("y")
+        scount << letter
+      else scount << " "
+      end
+    end
+    scount.to_s
+      return scount.join('').split(' ').size
+  end
 end
 
-a = SampleHaiku.new("this is a new
-paragraph with three lines")
 
-a.valid
+haiku = SampleHaiku.new("green and speckled legs,
+hop on logs and lily pads
+splash in cool water")
+puts haiku.paragraph
+puts haiku.syllable_counter
 
-
-
-
-end

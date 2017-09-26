@@ -1,22 +1,8 @@
+require 'ruby_rhymes'
+
+
 def syllable_counter(word)
-    new_paragarph = []
-    paragraph.split("").each do |letter|
-    if letter.to_s.downcase == "a"
-      new_paragraph << letter
-    elsif letter.to_s.downcase == "e"
-      new_paragraph << letter
-    elsif letter.to_s.downcase == "i"
-      new_paragraph << letter
-    elsif letter.to_s.downcase == "o"
-      new_paragraph << letter
-    elsif letter.to_s.downcase == "u"
-      new_paragraph << letter
-    elsif letter.to_s.downcase == "y"
-      new_paragarph << letter
-    else
-      new_paragraph << " "
-    end
-  end
+    word.to_s.to_phrase.syllables
 end
 
-puts syllable_counter(hello)
+puts syllable_counter("Hello, this is a sentence.")
