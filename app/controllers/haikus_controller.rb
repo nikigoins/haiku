@@ -4,21 +4,18 @@ class HaikusController < ApplicationController
     end
     
     def index
-        @haikus = ["An example haiku loaded from the database", "Another poem"]
+        @haikus = Haiku.all
     end
     
     def show
-      @haiku = {
-          haiku: "This ia a haiku loaded from the database.",
-          id: params[:id]
-      }
+        @haiku = Haiku.find(params[:id])
     end
     
     def edit
-        @haiku = {
-          haiku: "This ia a haiku loaded from the database.",
-          id: params[:id]
-      }
+        @haiku = Haiku.find(params[:id])
+    end
+    
+    def update
     end
     
     def home
