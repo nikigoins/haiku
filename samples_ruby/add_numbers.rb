@@ -1,3 +1,3 @@
 def add_numbers(first, second)
-  first.to_i + second_to.i
+  return first.to_i + second.to_i
 end

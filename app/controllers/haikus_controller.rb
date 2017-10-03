@@ -1,26 +1,54 @@
 class HaikusController < ApplicationController
     def rules
-        @title = "Changed the title"
     end
-    
+
     def index
         @haikus = Haiku.all
-    end  
-    
+    end
+
     def show
         @haiku = Haiku.find(params[:id])
-    end   
-    
-    def edit
-        @haiku = Haiku.find(params[:id])       
     end
-    
+
+    def edit
+        @haiku = Haiku.find(params[:id])
+    end
+
     def update
-    end    
-    
+      @haiku = Haiku.find(params[:id])
+      @haiku.update(haiku_params)
+      if @haiku.valid?
+        redirect_to @haiku
+      else
+        render :edit
+      end
+    end
+
     def home
     end
-    
+
     def new
-    end    
+      @haiku = Haiku.new
+    end
+
+    def create
+      @haiku = Haiku.create(haiku_params)
+      if @haiku.valid?
+        redirect_to @haiku
+      else
+        render :new
+      end
+    end
+
+    def destroy
+      haiku = Haiku.find(params[:id])
+      haiku.destroy
+      @success = "#{haiku.title} deleted"
+      @haikus = Haiku.all
+      render :index
+    end
+
+    private def haiku_params
+      params.require(:haiku).permit(:poem, :title, :user_email)
+    end
 end

@@ -1,11 +1,12 @@
 def array_delete(arr, delete_value)
   element = arr[delete_value] 
-  arr.delete(element)
+
   if element == nil
      "The value at position #{delete_value} does not exist"
   else
-     arr
+    arr.delete_at(delete_value.to_i)
   end
+  return arr
 end
 
 
@@ -15,11 +16,3 @@ end
   # Example: arr = [1, 2, 3] delete_value = 0.
   #   The answer is [2, 3] because [1] was deleted from arr
   # Hint, do not use puts!
-  
-  
-#Step 1
-
-#Find the element at delete_value
-
-#Step 2
-

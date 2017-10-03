@@ -1,8 +1,6 @@
 def count_lines(paragraph)
-    paragraph.lines.count
+  return paragraph.to_s.lines.count
 end
 
 
-puts count_lines("This is
-fun
-to do")
+puts count_lines("This is \n fun \n to do")

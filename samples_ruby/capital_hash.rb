@@ -1,11 +1,11 @@
 def find_capital(country)
-    return capitals[country]
+  return capitals[country]
 end
 
 
 
 def capitals
-  {
+  return {
       "USA" => "Washington, DC",
       "Canada" => "Ottawa",
       "United Kingdom" => "London",
@@ -26,3 +26,5 @@ def capitals
       "Kyrgyzstan" => "Bishkek"
   }
 end
+
+puts capitals["USA"]
