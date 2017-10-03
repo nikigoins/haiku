@@ -32,6 +32,11 @@
     column-count: 10;
 }
 
+.haiku-edit .edit_haiku ul {
+    list-style: none;
+    column-count: auto;
+}
+
 
 .haiku-edit a:link {
     color: #6DBF2E;

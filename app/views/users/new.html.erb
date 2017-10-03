@@ -1,35 +1,26 @@
-class UsersController < ApplicationController  
-  def new
-    @user = User.new 
-  end
-  def create
-    @user = User.new(params[:user])
-    if @user.save
-      flash[:notice] = "You signed up successfully"
-      flash[:color]= "valid"
-    else
-      flash[:notice] = "Form is invalid"
-      flash[:color]= "invalid"
-    end
-    render "new"
-  end
-end
+<div class='user-new'>
+  <h1>Haiku Signup Form</h1>
 
-<% @page_title = "UserAuth | Signup" %>
-<div class="Sign_Form">
-  <h1>Sign Up</h1>
-  <%= form_for(:user, :url => {:controller => 'users', :action => 'create'}) do |f| %>
-    <p> Username:</br> <%= f.text_field :username%> </p>
-    <p> Email:</br> <%= f.text_field :email%> </p>
-    <p> Password:</br> <%= f.password_field :password%></p>
-    <p> Password Confirmation:</br> <%= f.password_field :password_confirmation%> </p>
-    <%= f.submit :Signup %>
-  <% end %>
-  <% if @user.errors.any? %>
-    <ul class="Signup_Errors">
-    <% for message_error in @user.errors.full_messages %>
-      <li>* <%= message_error %></li>
+  <p> Complete the information form below.</p>
+
+  <%= form_for @user do |f| %>
+    <% if @user.errors.any? %>
+      <h5>Errors</h5>
+      <ul>
+        <% @user.errors.full_messages.each do |message| %>
+          <li><p><%= message %></p></li>
+        <% end %>
+      </ul>
     <% end %>
-    </ul>
+
+    <%= f.label :email %>
+    <%= f.text_field :email, placeholder: "E-Mail"%>
+
+    <%= f.label :name %>
+    <%= f.text_field :name, placeholder: "Name"%>
+
+    <br />
+    <%= f.submit "Submit", class: "btn btn-primary subone" %>
+
   <% end %>
 </div>

@@ -4,22 +4,12 @@
    <img src="http://www.eskraay.com/wp-content/uploads/2015/03/haiku.jpg" width="200" height="200"/>
 </h2>
 <h3>
-    <p> Haikus by Nicole Nash</p>
+    <p>Bad Haikus by Emily Ring</p>
     <ol>
-        <li>
-          <%= link_to "One - Father, Son, Holy Spirit Almighty Omnipotent; Wonderful is He",
-               "/haikus/1" %>
-        </li>
-
-        <li>
-          <%= link_to "Fearless - Fear not of fear, fear once the; fear has become fearless",
-               "/haikus/2" %>
-        </li>
-
         <% @haikus.each do |haiku| %>
-          <li>
-            <%= link_to haiku, "/haikus/3" %>
-          </li>
+            <li>
+                <a href=<%= "/haikus/#{haiku.id}"%>  ><%= haiku.title %></a>
+            </li>
         <% end %>
     </ol>
 </h3>
