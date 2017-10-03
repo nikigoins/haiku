@@ -7,4 +7,20 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-Haiku.create
+Haiku.create(
+  title: 'example',
+  poem: "I am first with five \n Then seven in the middle \n Five again to end",
+  user_email: 'fake@fake.com'
+)
+
+Haiku.create(
+  title: 'frogs',
+  poem: "Green and speckled legs \n Hop on logs and lily pads \n Splash in cool water",
+  user_email: 'fake@fake.com'
+)
+
+Haiku.create(
+  title: 'welcome',
+  poem: "Welcome to Haikus \n When submitting your Haiku \n Bring the best of You",
+  user_email: 'different_user@fake.com'
+)

@@ -4,7 +4,7 @@
   <h3><%= "ID: #{@haiku.id}" %></h3>
   <hr/>
   <img src="https://ayegel-dev.nyc3.digitaloceanspaces.com/download.jpg">
-  
+
   <%= form_for @haiku do |f| %>
     <% if @haiku.errors.any? %>
       <h5>Errors</h5>
@@ -17,10 +17,10 @@
 
     <%= f.label :title %>:
     <%= f.text_field :title, value: @haiku.title %><br />
-    
+
     <%= f.label :poem %>:
-    <%= f.text_field :poem, value: @haiku.poem %><br />
-    
+    <%= f.text_area :poem, value: @haiku.poem, rows: 3 %><br />
+
     <%= f.submit "Save changes" %>
   <% end %>
 </div>
