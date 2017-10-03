@@ -1,17 +1,8 @@
-<div class='haiku-edit'>
-  <h1>This page is used to edit a Haiku.</h1>
-  <h3><%= "ID: #{@haiku.id}" %></h3>
-  <hr/>
-  <img src="https://ayegel-dev.nyc3.digitaloceanspaces.com/download.jpg">
-  
-  <%= form_for haikus_path(@haiku) do |f| %>
-    <%= f.label :title %>:
-    <%= f.text_field :title, value: @haiku.title %><br />
-    
-    <%= f.label :poem %>:
-    <%= f.text_field :poem, value: @haiku.poem %><br />
-    
-    <%= f.submit "Save changes" %>
-  
-  <% end %>
+<div class='user-edit'>
+    <h1>This page is used to edit user info</h1>
+    <h3><%=@user.name%></h3>
+         <p><%=@user.bio%></p>
+        <% if current_user.id == @user.id %>
+            <p><a href="<%=edit_user_path(@user.id)%>" class="btn btn-primary" role="button">Edit Profile</a></p>
+        <% end %>
 </div>

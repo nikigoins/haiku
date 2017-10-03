@@ -1,6 +1,10 @@
-<h1 style="text-align: center;"><%= @haiku.title %></h1>
-
-<p><%= @haiku.poem %></p>
-<p><%= "Their id is #{@haiku.id}" %></p>
-
-<%= link_to "Edit This Haiku", "/haikus/#{@haiku.id}/edit" %>
+<div class="row">
+    <div class="col-md-3 col-sm-12">
+        <img src="<%=@user.avatar_url%>" alt="Avatar" style="width: 300px; max-width: 100%;">
+        <h1><%=@user.name%></h1>
+        <p>TODO: User bio</p>
+    </div>
+    <div class="col-md-9 col-sm-12">
+        <p>TODO: Show user's posts here</p>
+    </div>
+</div>

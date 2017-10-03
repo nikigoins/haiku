@@ -1,10 +1,10 @@
 class HaikusController < ApplicationController
     def rules
-        @title = "Changed the title!"
+        @title = "The Rules of a Haiku"
     end
     
     def index
-        @haikus = Haiku.all
+        @haikus = ["An example haiku loaded from the database", "Another poem"]
     end
     
     def show
@@ -12,7 +12,10 @@ class HaikusController < ApplicationController
     end
     
     def edit
-        @haiku = Haiku.find(params[:id])
+        @haiku = {
+          haiku: "This ia a haiku loaded from the database.",
+          id: params[:id]
+      }
     end
     
     def home

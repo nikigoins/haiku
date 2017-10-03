@@ -1,15 +1,14 @@
-<h1 style="text-align: center;">Haiku List</h1>
-<h2 class="image">
-
-   <img src="http://www.eskraay.com/wp-content/uploads/2015/03/haiku.jpg" width="200" height="200"/>
-</h2>
-<h3>
-    <p>Bad Haikus by Emily Ring</p>
-    <ol>
-        <% @haikus.each do |haiku| %>
-            <li>
-                <a href=<%= "/haikus/#{haiku.id}"%>  ><%= haiku.title %></a>
-            </li>
-        <% end %>
-    </ol>
-</h3>
+<div class="row">
+  <% @users.each do |user| %>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img src="<%=user.avatar_url%>" alt="Avatar" style="width: 100%;">
+        <div class="caption">
+          <h3><%=user.name%></h3>
+          <p>TODO: Add user bio.</p>
+          <p><a href="<%=user_path(user)%>" class="btn btn-primary" role="button">Profile</a></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
