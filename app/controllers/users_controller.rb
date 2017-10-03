@@ -37,9 +37,8 @@ class UsersController < ApplicationController
   def destroy
     user = User.find(params[:id])
     user.destroy
-    @success = "#{user.name} deleted"
-    @users = Haiku.all
-    render :index
+    flash[:notice] = "#{user.name} deleted"
+    redirect_to users_path
   end
 
   private def user_params
