@@ -12,4 +12,4 @@ def grading(num)
   else
     return "Wrong score"
   end
-  
+end
