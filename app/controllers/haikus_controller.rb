@@ -44,7 +44,8 @@ class HaikusController < ApplicationController
       haiku = Haiku.find(params[:id])
       haiku.destroy
       flash[:notice] = "#{haiku.title} deleted"
-      redirect_to haikus_path
+      @haikus = Haiku.all
+      render :index
     end
 
     private def haiku_params
