@@ -10,3 +10,14 @@ rails s -b $IP -p $PORT
 
 control c
   Turns off the site
+  
+**Delete your database and create a new one
+rake db:drop
+rake db:create
+rake db:migrate
+rake db:seed
+
+*** Open a rails terminal
+*** that is connected to your database
+rails console
+
