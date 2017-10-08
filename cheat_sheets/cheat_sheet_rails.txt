@@ -1,5 +1,5 @@
 bundle
-  *Update your files
+  *Update/install software (from the Gemfile)
 
 rake db:migrate
   *Update your database
@@ -12,3 +12,13 @@ rails console
 
 control c
   Turns off the site
+
+** Delete your database and create a new one
+rake db:drop
+rake db:create
+rake db:migrate
+rake db:seed
+
+*** Open a rails terminal 
+*** that is connected to your Database
+rails console

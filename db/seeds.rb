@@ -6,6 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 user1 = User.create(
+<<<<<<< HEAD
  name: "Bob Smith",
  email: 'different_user@fake.com'
 )
@@ -13,9 +14,19 @@ user1 = User.create(
 user2 = User.create(
  name: 'Jane Doe',
  email: 'fake@fake.com'
+=======
+  name: "Bob Smith",
+  email: 'different_user@fake.com'
+>>>>>>> 6d43a4b41b9adefb331c2a93d6733600aa9ba219
+)
+
+user2 = User.create(
+  name: 'Jane Doe',
+  email: 'fake@fake.com'
 )
 
 Haiku.create(
+<<<<<<< HEAD
  title: 'example',
  poem: "I am first with five \n Then seven in the middle \n Five again to end",
  user_id: user2.id
@@ -31,4 +42,21 @@ Haiku.create(
  title: 'welcome',
  poem: "Welcome to Haikus \n When submitting your Haiku \n Bring the best of You",
  user_id: user1.id
+=======
+  title: 'example',
+  poem: "I am first with five \n Then seven in the middle \n Five again to end",
+  user_id: user2.id
+)
+
+Haiku.create(
+  title: 'frogs',
+  poem: "Green and speckled legs \n Hop on logs and lily pads \n Splash in cool water",
+  user_id: user2.id
+)
+
+Haiku.create(
+  title: 'welcome',
+  poem: "Welcome to Haikus \n When submitting your Haiku \n Bring the best of You",
+  user_id: user1.id
+>>>>>>> 6d43a4b41b9adefb331c2a93d6733600aa9ba219
 )
