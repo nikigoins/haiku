@@ -19,3 +19,7 @@
 <% else %>
    <h4>The haiku has not been rated</h4>
 <% end %>
+
+<br />
+<%= link_to "Add New Rating", "/haikus/#{@haiku.id}/ratings/new" %><br />
+<%= link_to "View All Ratings", "/haikus/#{@haiku.id}/ratings" %>

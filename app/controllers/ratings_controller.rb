@@ -24,7 +24,7 @@ class RatingsController < ApplicationController
  def create
    @rating = Rating.new(rating_params)
    if @rating.save
-     redirect_to @haiku, notice: 'Rating was successfully created.'
+     redirect_to [@haiku, @rating], notice: 'Rating was successfully created.'
    else
      render :new
    end
@@ -42,7 +42,7 @@ class RatingsController < ApplicationController
  # DELETE /ratings/1
  def destroy
    @rating.destroy
-   redirect_to ratings_url, notice: 'Rating was successfully destroyed.'
+   redirect_to @haiku, notice: 'Rating was successfully destroyed.'
  end
 
  private
@@ -50,7 +50,7 @@ class RatingsController < ApplicationController
    def set_haiku
      @haiku = Haiku.find(params[:haiku_id])
    end
-   
+
    def set_rating
      @rating = @haiku.ratings.find(params[:id])
    end
