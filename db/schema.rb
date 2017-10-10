@@ -12,8 +12,14 @@
 
 ActiveRecord::Schema.define(version: 20171005234013) do
 
-# Could not dump table "haikus" because of following StandardError
-#   Unknown type 'reference' for column 'user_id'
+  create_table "haikus", force: :cascade do |t|
+    t.string "title"
+    t.text "poem"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "user_id"
+    t.index ["user_id"], name: "index_haikus_on_user_id"
+  end
 
   create_table "ratings", force: :cascade do |t|
     t.integer "vote"
