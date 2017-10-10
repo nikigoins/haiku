@@ -9,14 +9,15 @@
 <br />
 
 <%= link_to 'Delete This Haiku', [@haiku], method: :delete %>
-<hr>
+
+<hr />
 <%= link_to "Author: #{@haiku.user.name}", @haiku.user %>
 
 <hr />
 <% if @haiku.average_rating > 0 %>
-    <h4><%= "Average Rating: #{@haiku.average_rating}"%></h4>
+   <h4><%= "Average Rating: #{@haiku.average_rating}" %></h4>
 <% else %>
-    <h4><%= "This Haiku has not been rated"%>
+   <h4>The haiku has not been rated</h4>
 <% end %>
 
 <br />

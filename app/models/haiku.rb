@@ -1,5 +1,6 @@
 class Haiku < ApplicationRecord
     belongs_to :user
+    has_many :ratings, dependent: :destroy
 
     has_many :ratings, dependent: :destroy
 
@@ -11,18 +12,13 @@ class Haiku < ApplicationRecord
     validates :poem, uniqueness: true, presence: true
 
     def average_rating
-      total = 0
-      count = 0
-      ratings.each do |rating|
-        total = total + rating.vote
-        count = count + 1
-      end
-
-      if count == 0
-        return 0
-      else
-        return (total.to_f / count.to_f).round(2)
-      end
+        total_number_of_ratings = self.ratings.count
+        if total_number_of_ratings == 0
+            return 0
+        else
+            total_added_numbers = self.ratings.sum(&:vote)
+            return (total_added_numbers.to_f / total_number_of_ratings.to_f).round(2)
+        end
     end
 
     def valid_poem
@@ -41,13 +37,13 @@ class Haiku < ApplicationRecord
                is_valid = false
             end
 
-            if line2.blank? || line2.to_phrase.syllables != 7
+            if line2.blank? ||  line2.to_phrase.syllables != 7
                 is_valid = false
-              end
+            end
 
-              if line3.blank? || line3.to_phrase.syllables != 5
+            if line3.blank? || line3.to_phrase.syllables != 5
                 is_valid = false
-              end
+            end
         end
 
         if is_valid

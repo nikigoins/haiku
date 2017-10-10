@@ -31,7 +31,7 @@
       Try it for yourself and we will be the judge! To see if you have what it takes to be a
       HAIKU MASTER, just send in your haiku in the form below and submit. Don't forget your
       email address.
-      <h2>{ 
+      <h2>{
           text-shadow: 4px 4px;
           Happy Haiku Hunting}</h2>
     </p>
@@ -48,7 +48,7 @@
     <% end %>
     <%= f.label :user %>:
     <%= f.collection_select :user_id, User.all.order(:name), :id, :name, include_blank: true %><br />
-
+    
     <%= f.label :title %>:
     <%= f.text_field :title %><br />
 
